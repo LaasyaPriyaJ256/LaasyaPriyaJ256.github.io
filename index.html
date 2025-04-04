@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shampoo Brand</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://source.unsplash.com/1600x900/?shampoo,beauty') no-repeat center center/cover;
+            color: white;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: black;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: darkgray;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .button {
+            background: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: darkgreen;
+        }
+        footer {
+            background: black;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .search {
+            padding: 10px;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>ShinyLocks Shampoo</header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+        <a href="#">Checkout</a>
+    </nav>
+
+    <div class="container">
+        <input type="text" class="search" placeholder="Search for products...">
+        <button class="button">Search</button>
+        
+        <h2>Our Bestselling Shampoos</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://source.unsplash.com/200x200/?bottle,shampoo" alt="Shampoo">
+                <h3>Moisture Boost</h3>
+                <p>Hydrates and nourishes hair.</p>
+                <button class="button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://source.unsplash.com/200x200/?bottle,haircare" alt="Shampoo">
+                <h3>Anti-Dandruff</h3>
+                <p>Removes dandruff effectively.</p>
+                <button class="button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://source.unsplash.com/200x200/?cosmetics,shampoo" alt="Shampoo">
+                <h3>Volumizing Shampoo</h3>
+                <p>Adds volume and shine.</p>
+                <button class="button">Buy Now</button>
+            </div>
+        </div>
+
+        <h2>Watch Our Ad</h2>
+        <video width="80%" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Login / Create an Account</h2>
+        <form>
+            <input type="text" placeholder="Username" required><br><br>
+            <input type="password" placeholder="Password" required><br><br>
+            <button class="button">Login</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 ShinyLocks Shampoo. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
